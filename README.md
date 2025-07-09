@@ -61,8 +61,23 @@ To get started with JetRacer, follow these steps
     - [Latrax version](docs/latrax/hardware_setup.md) 
     - [Tamiya version](docs/tamiya/hardware_setup.md) 
 
-3. Follow the [software setup](docs/software_setup.md)
-4. Run through the [examples](docs/examples.md)
+3. **Install required packages**
+
+    First, clone this repository and install the JetRacer package:
+    ```bash
+    cd jetracer
+    pip install -e .
+    ```
+
+    For Jetson devices, install the Jetson GPIO library:
+    ```bash
+    pip install Jetson.GPIO
+    ```
+
+    > **Note**: The Jetson.GPIO library is specifically for NVIDIA Jetson devices. If you're running on other hardware, you may encounter import errors, which is expected.
+
+4. Follow the [software setup](docs/software_setup.md)
+5. Run through the [examples](docs/examples.md)
 
 ## See also
 
