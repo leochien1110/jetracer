@@ -1,0 +1,3 @@
+# Core dependencies for jetracer
+traitlets>=5.0.0
+adafruit-circuitpython-servokit>=1.3.0 

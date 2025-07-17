@@ -1,0 +1,44 @@
+# Include documentation
+include README.md
+include LICENSE.md
+include CHANGELOG.md
+
+# Include package data
+recursive-include jetracer *.py
+recursive-include jetracer *.json
+recursive-include jetracer *.yaml
+recursive-include jetracer *.yml
+
+# Include examples and notebooks (optional)
+recursive-include notebooks *.ipynb
+recursive-include notebooks *.py
+include notebooks/README.md
+
+# Include documentation
+recursive-include docs *.md
+recursive-include docs *.rst
+recursive-include docs *.txt
+
+# Include hardware assets for reference
+recursive-include assets *.md
+recursive-include assets *.stl
+recursive-include assets *.step
+recursive-include assets *.iges
+
+# Exclude development and build files
+exclude .gitignore
+exclude .DS_Store
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * *.so
+recursive-exclude * .DS_Store
+exclude .git
+recursive-exclude .git *
+exclude .venv
+recursive-exclude .venv *
+exclude build
+recursive-exclude build *
+exclude dist
+recursive-exclude dist *
+exclude *.egg-info
+recursive-exclude *.egg-info * 

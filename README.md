@@ -86,3 +86,14 @@ To get started with JetRacer, follow these steps
 * [JetCam](http://github.com/NVIDIA-AI-IOT/jetcam) - An easy to use Python camera interface for NVIDIA Jetson
 * [JetCard](http://github.com/NVIDIA-AI-IOT/jetcard) - An SD card image for web programming AI projects with NVIDIA Jetson Nano
 * [torch2trt](http://github.com/NVIDIA-AI-IOT/torch2trt) - An easy to use PyTorch to TensorRT converter
+
+
+## Install nvidia racer package in the environment
+
+```bash
+source /home/leo/workspaces/jetracer/venv/bin/activate
+pip install nvidia-racer
+```
+
+### Convert to whl
+This can make the installation faster and work without the entire repository.
